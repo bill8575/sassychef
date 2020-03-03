@@ -19,6 +19,13 @@ import * as authActions from './store/auth.actions';
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
+  // styleUrls: ['./auth.component.css']  
+  // styles: [`
+  //   #login .container,
+  //   #signup .container {
+  //     width: 20%;
+  //   }
+  // `]  
 })
 export class AuthComponent implements OnInit, OnDestroy {
   isLoginMode = true;

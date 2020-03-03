@@ -20,10 +20,11 @@ import * as RecipeActions from '../recipes/store/recipe.actions';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  //styleUrls: ['./app.component.css']
+  // styleUrls: ['./header.component.css']
   // styles: [`
-  // 	h3 {
-  // 		color: dodgerblue;
+  // 	#login .container,
+  //   #signup .container {
+  // 		width: 20%;
   // 	}
   // `]
 })
@@ -38,6 +39,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   recipe: Recipe;
   id: number;
   isAuthenticated = false;
+  collapsed = true;
   private userSub: Subscription;
 
   constructor(private dataStorageSvc: DataStorageService,
